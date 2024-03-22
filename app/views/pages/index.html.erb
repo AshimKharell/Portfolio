@@ -1,0 +1,307 @@
+    <!-- Masthead-->
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-subheading">Welcome To My Portfolio</div>
+    <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+  </div>
+</header>
+<!-- Services-->
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Skills</h2>
+      <h3 class="section-subheading text-muted">Here are my top three skills.</h3>
+    </div>
+    <div class="row text-center">
+      <%  @skills.each do |skill| %>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas <%= skill.icon %> fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3"><%= skill.name %></h4>
+          <p class="text-muted"><%= skill.description %></p>
+        </div>
+      <%end%>
+    </div>
+  </section>
+  <!-- Portfolio Grid-->
+  <section class="page-section bg-light" id="portfolio">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Portfolio</h2>
+        <h3 class="section-subheading text-muted">These are the projects i have done.</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- Portfolio item 1-->
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="startbootstrap-agency-gh-pages/assets/img/portfolio/hrms.jpg" alt="..." style="width: 800px; height: 300px;" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">HRMS</div>
+              <div class="portfolio-caption-subheading text-muted">Created a human resource management system</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- Portfolio item 2-->
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="startbootstrap-agency-gh-pages/assets/img/portfolio/ecommerce.jpg" alt="..." style="width: 800px; height: 300px;" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">E-commerce with bidding</div>
+              <div class="portfolio-caption-subheading text-muted">You can do e-commerce with bidding feature.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- Portfolio item 3-->
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="startbootstrap-agency-gh-pages/assets/img/portfolio/splitshot.jpg" alt="..." style="width: 800px; height: 300px;" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Split Shot</div>
+              <div class="portfolio-caption-subheading text-muted">Local Multiplayer Game using Unreal Engine</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About-->
+<section class="page-section" id="about">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">About</h2>
+      <h3 class="section-subheading text-muted">I aim to provide a glimpse into the professional journey and values that define my approach to work. As a seasoned Software Engineer I bring a unique blend of expertise, creativity, and a passion for software development. </h3>
+    </div>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/1.jpg" alt="..." /></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>2017-2022</h4>
+            <h4 class="subheading">Our Humble Beginnings</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">Embarking on the journey of studying software engineering from 2017 to 2022 marked the foundation of my technical expertise. During this period, I delved into a comprehensive curriculum, gaining proficiency in programming languages, algorithms, and software development methodologies. The challenges encountered were opportunities for growth, and the knowledge acquired laid the groundwork for my subsequent ventures. It was a period of exploration, hands-on learning, and building the foundation that fuels my passion for crafting innovative solutions today.</p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image"><img class="rounded-circle img-fluid" src="startbootstrap-agency-gh-pages/assets/img/about/2.jpg" alt="..." /></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>December 2022</h4>
+            <h4 class="subheading">Transition to Full Service</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted"> In December 2015, I embarked on an exciting new chapter at Smart Solar Nepal Corporation, initiating our journey into full-service software development. This strategic move represented a transformative period, as we expanded our scope to offer comprehensive software solutions. From the inception of projects to their successful execution and ongoing support, our team dedicated itself to providing end-to-end services. This transition allowed us to seamlessly integrate innovation and efficiency into every phase of software development, ensuring that our clients received not just individual services but a holistic and tailored approach to meet their evolving needs. This pivotal decision marked a significant milestone in our commitment to excellence and versatility in the dynamic field of software development.</p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <h4>
+            Be Part
+            <br />
+            Of My
+            <br />
+            Story!
+          </h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Our Amazing IT Team</h2>
+      <h3 class="section-subheading text-muted">Empowering Excellence in Technology</h3>
+      <p class="text-muted">
+        Meet our extraordinary IT team, a group of dedicated professionals united by a passion for innovation and excellence. Each member brings a unique set of skills and expertise, contributing to the dynamic synergy that defines our collective success. United by a shared commitment to staying at the forefront of technological advancements, we collaborate seamlessly to overcome challenges and deliver cutting-edge solutions. Our team is not just about writing code; it's about crafting solutions that empower our clients and drive positive change. 
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/ayush.jpg" alt="..." />
+          <h4>Ayush Humagain</h4>
+          <p class="text-muted">Lead Developer</p>
+          <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aayush.humagain.3382" aria-label="Dipam Dhakal Facebook Profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/aayush-humagain/" aria-label="Ayush Humagain LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/dipam.jpg" alt="Dipam Dhakal" />
+          <h4>Dipam Dhakal</h4>
+          <p class="text-muted">iOS Developer</p>
+          <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/deepam.dhakal" aria-label="Dipam Dhakal Facebook Profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/deepam-dhakal-8577a21a4/" aria-label="Dipam Dhakal LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="startbootstrap-agency-gh-pages/assets/img/team/gaurav.jpg" alt="..." />
+          <h4>Guarav Sharma</h4>
+          <p class="text-muted">SOE Developer</p>
+          <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/gaurav0000313" aria-label="Dipam Dhakal Facebook Profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+<!-- Contact-->
+<section class="page-section" id="contact">
+  <div class="container">
+    <div class="text-center">
+     <h2 class="section-heading">Email: <span>kharelashim0@gmail.com</span></h2>
+     <h2 class="section-heading">Contact No: <span>9861099875</span></h2>
+
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+      <div class="col-lg-4 my-3 my-lg-0">
+        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/ashim.kharel.585" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ashim-kharel-44b270284/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Portfolio Modals-->
+<!-- Portfolio item 1 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal"><img src="startbootstrap-agency-gh-pages/assets/img/close-icon.svg" alt="Close modal" /></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Human Resource Management System</h2>
+              <p class="item-intro text-muted">You can perform all the CRUD operation here.</p>
+              <img class="img-fluid d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/portfolio/hrms.jpg" alt="..." />
+              <p>As a dedicated and innovative professional in the field of software development, I undertook the design and implementation of a comprehensive Human Resource Management System (HRMS). This project aimed to streamline and enhance the efficiency of HR processes within organizations, fostering a seamless management of personnel data, employee performance, and overall human resource operations. The successful implementation of this HRMS resulted in a significant reduction in administrative overhead, improved data accuracy, and enhanced communication between HR professionals and employees. The modular design allows for scalability, making it adaptable to the evolving needs of organizations of various sizes.
+                This project not only demonstrates my technical proficiency in full-stack development but also showcases my understanding of the intricacies of HR processes and my ability to translate them into effective and user-friendly software solutions.</p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Client:</strong>
+                  HRMS
+                </li>
+                <li>
+                  <strong>Category:</strong>
+                  Ruby on Rails
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 2 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal"><img src="startbootstrap-agency-gh-pages/assets/img/close-icon.svg" alt="Close modal" /></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">E-commerce with Bidding</h2>
+              <p class="item-intro text-muted">You can perform E-commerce operation with bidding.</p>
+              <img class="img-fluid d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/portfolio/ecommerce.jpg" alt="..." />
+              <p>The primary goal was to create an engaging and competitive online marketplace, elevating the traditional ecommerce experience. The bidding feature allows users to bid on products, introducing an element of excitement and interaction. Sellers can set a starting price, and buyers engage in competitive bidding until the auction concludes. The project involved the implementation of robust security measures to safeguard the bidding process and integrate secure payment gateways for seamless transactions.
+                The technical architecture of the platform includes a dynamic frontend built with HTML, CSS, and JavaScript for an intuitive user interface. The backend, powered by Node.js and Express.js, ensures robust server-side functionality, and MongoDB serves as the database to efficiently manage product listings, user profiles, and bidding data. The real-time bidding engine was implemented using WebSocket technology, providing instantaneous updates to users as bids are placed. Upon completion, the ecommerce platform with a bidding feature successfully provided users with an engaging, competitive, and secure online shopping experience, positioning the project as a noteworthy contribution to the evolving landscape of ecommerce platforms.</p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Client:</strong>
+                  E-commerce with bidding
+                </li>
+                <li>
+                  <strong>Category:</strong>
+                  ROR, HTML, CSS
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 3 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-bs-dismiss="modal"><img src="startbootstrap-agency-gh-pages/assets/img/close-icon.svg" alt="Close modal" /></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details-->
+              <h2 class="text-uppercase">Split Shot</h2>
+              <p class="item-intro text-muted">Local Multiplayer Game using Unreal Engine</p>
+              <img class="img-fluid d-block mx-auto" src="startbootstrap-agency-gh-pages/assets/img/portfolio/splitshot.jpg" alt="..." />
+              <p>In this dynamic gaming project, I undertook the creation of a split-screen shooter local multiplayer game using Unreal Engine, delivering an immersive and thrilling gaming experience for friends and family. The primary objective was to design a game that combines the adrenaline-pumping action of a shooter with the social enjoyment of local multiplayer gameplay. The split-screen shooter local multiplayer game successfully combines technical innovation with engaging gameplay, creating an entertaining and social gaming experience. The project showcases my proficiency in game development using Unreal Engine, demonstrating a deep understanding of both technical and gameplay aspects, and the ability to create an immersive multiplayer gaming environment for local play. This project stands as a testament to my passion for game development and my commitment to delivering high-quality, enjoyable gaming experiences.
+              </p>
+              <ul class="list-inline">
+                <li>
+                  <strong>Client:</strong>
+                  FLocal Multiplayer Game using Unreal Engine
+                </li>
+                <li>
+                  <strong>Category:</strong>
+                  Unreal Engine
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i>
+                Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
